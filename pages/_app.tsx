@@ -6,7 +6,7 @@ import { getDefaultWallets, RainbowKitProvider, darkTheme } from '@rainbow-me/ra
 import { chain, configureChains, createClient, WagmiConfig } from 'wagmi';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
-import { DivergentClientProvider, getDivergentClient } from "@huddle01/divergent-client";
+import { DivergentAVClientProvider, getDivergentAVClient } from "@huddle01/divergent-av";
 
 
 const { chains, provider } = configureChains(
@@ -28,16 +28,16 @@ const wagmiClient = createClient({
   provider
 })
 
-const divergentClient = getDivergentClient("https://dg-devnet.huddle01.com");
+const divergentAVClient = getDivergentAVClient("https://dg-devnet.huddle01.com");
 
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider theme={darkTheme()} chains={chains}>
-      <DivergentClientProvider value={divergentClient}>
+      <DivergentAVClientProvider value={divergentAVClient}>
           <Component {...pageProps} />
-          </DivergentClientProvider>
+          </DivergentAVClientProvider>
       </RainbowKitProvider>
     </WagmiConfig>
   )

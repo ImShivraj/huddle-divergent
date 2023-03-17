@@ -464,6 +464,31 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
   integrity sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==
 
+"@huddle01/divergent-av@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@huddle01/divergent-av/-/divergent-av-0.0.1.tgz#5fb90341931a9747d99643b781ea8be1352fc513"
+  integrity sha512-ifc3sxRsKFmGm+RAO/r4sVrg3M5O3rZWbDUXnFACEPFxU4TdKZEMsixC0NKJegDSvOQuO736xtFm5nvf+SPH0A==
+  dependencies:
+    "@ethersproject/providers" "^5.7.2"
+    "@metamask/providers" "^10.2.0"
+    axios "^1.1.3"
+    crypto-aes-gcm "^1.1.0"
+    diffie-hellman "^5.0.3"
+    ed2curve "^0.3.0"
+    ethers "^5.7.2"
+    graphql "^16.6.0"
+    i "^0.3.7"
+    npm "^9.1.1"
+    pino "^8.6.1"
+    react "18.2.0"
+    simple-peer "^9.11.1"
+    socket.io "^4.5.3"
+    socket.io-client "^4.5.3"
+    tweetnacl "^1.0.3"
+    tweetnacl-util "^0.15.1"
+    uuid "^9.0.0"
+    zustand "4.0.0-rc.1"
+
 "@huddle01/divergent-client@^0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@huddle01/divergent-client/-/divergent-client-0.0.1.tgz#e8d46e4ed0068575b05d9c6a05b192b3671953f7"
